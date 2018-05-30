@@ -16,6 +16,8 @@ Tested with Jest.
 
 &nbsp;
 
+Install ```npm install```
+
 Run ```node .\server.js```
 
 Test ```npm test```
