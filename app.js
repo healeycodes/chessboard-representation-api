@@ -1,7 +1,7 @@
 const express = require('express')
     ,   bodyParser = require('body-parser')
-    ,   webshot = require('webshot')
 const ejs = require('ejs').renderFile
+
 // App to be exported
 const app = express()
 
@@ -17,17 +17,18 @@ app.use(bodyParser.json())
 
 // Home Page
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('<h3>FEN to HTML Chess Board Microservice</h3><a href="/api/fen/r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R">Example route</a><br><br>GET: /api/fen/*FEN String*<br><br>POST: /api/fen/ - Accepts JSON formatted as so: {\"fen\":\"*FEN String*\"}')
 })
 
 // HTML chess board GET route
-app.get('/api/fen/png/:fen(*)', (req, res) => {
+// Takes FEN string as params
+app.get('/api/fen/:fen(*)', (req, res) => {
     chessboard(req.params.fen, res)
 })
 
 // HTML chess board POST route
-// {"fen":"fen string"}
-app.post('/api/fen/chessboard', (req, res) => {
+// Accepts {"fen":"fen string"}
+app.post('/api/fen/', (req, res) => {
     json = req.body
     chessboard(json.fen, res)
 })
@@ -36,12 +37,5 @@ app.post('/api/fen/chessboard', (req, res) => {
 const chessboard = (fen, res) => {
     res.render('chessboard.html', {fen: fen})
 }
-
-/*
-    ejs(__dirname + '/public/views/chessboard.html', {fen:'r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R'}, function(err, str) {
-        // str => Rendered HTML string
-        console.log(str)
-    })
-*/
 
 module.exports = app
