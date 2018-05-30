@@ -4,13 +4,13 @@ This is an ongoing experiment to create a general-use chess board representation
 
 Currently there are two routes, both of which accept a FEN string and return a page containing a chessboard.js representation of the FEN string in HTML/CSS/JavaScript.
 
-### GET /api/fen/ `<FEN String>`
+#### GET /api/fen/ `<FEN String>`
 
-### POST /api/fen/ `{"fen":"<FEN String>"}`
+#### POST /api/fen/ `{"fen":"<FEN String>"}`
 
 &nbsp;
 
-#### Tech Stack
+### Tech Stack
 Node.js/Express with EJS templates.
 Tested with Jest.
 
