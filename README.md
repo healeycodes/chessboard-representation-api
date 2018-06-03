@@ -1,5 +1,3 @@
-## getchessboard
-
 This is an ongoing experiment to create a general-use chess board representation API.
 
 Currently it's an example of a Node.js/Express/EJS wrapper around chessboard.js.
