@@ -1,6 +1,6 @@
 ### Show Chessboard With Express
 
-This is an ongoing experiment to create a general-use chess board representation API (i.e., something that returns images).
+This is an ongoing project to create a general-use chess board representation API (i.e., something that returns images).
 
 Currently it's an example of a Node.js/Express/EJS wrapper around chessboard.js.
 
