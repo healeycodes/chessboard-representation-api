@@ -1,4 +1,9 @@
+## Chessboard Representation API
+
 This is an ongoing experiment to create a general-use chess board representation API.
+
+![alt text](https://github.com/healeycodes/show-chessboard-with-express/blob/master/public/img/example-board.png "Chessboard")
+
 
 Currently it's an example of a Node.js/Express/EJS wrapper around chessboard.js.
 
@@ -17,8 +22,14 @@ Tested with Jest.
 
 &nbsp;
 
-Install ```npm install```
+### Install
 
-Run ```node .\server.js```
+```npm install```
 
-Test ```npm test```
+### Run
+
+```node .\server.js```
+
+### Test
+
+```npm test```
