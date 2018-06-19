@@ -9,9 +9,9 @@ Currently it's an example of a Node.js/Express/EJS wrapper around chessboard.js.
 
 There are two routes, both of which accept a FEN string and return a page containing a chessboard.js representation of the FEN string in HTML/CSS/JavaScript. GET uses params, POST uses JSON.
 
-#### GET /api/fen/ `<FEN String>`
+GET: /api/fen/`<FEN String>`
 
-#### POST /api/fen/ `{"fen":"<FEN String>"}`
+POST: /api/fen/`{"fen":"<FEN String>"}`
 
 &nbsp;
 
