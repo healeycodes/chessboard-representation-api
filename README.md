@@ -18,7 +18,7 @@ There are two routes, both of which accept a FEN string and return a page contai
 ### Tech Stack
 Node.js/Express with EJS templates, chessboard.js.
 
-Tested with Jest.
+Tested with Jest and SuperTest.
 
 &nbsp;
 
