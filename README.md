@@ -26,7 +26,7 @@ POST: /api/fen/`{"fen":"<FEN String>"}`
 ### Tech Stack
 Node.js/Express with EJS templates, chessboard.js.
 
-Tested with Jest and SuperTest.
+Tested with Jest and SuperTest. Added Travis CI (06/19).
 
 &nbsp;
 
