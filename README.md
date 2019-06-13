@@ -1,11 +1,13 @@
 ## Chessboard Representation API
 
-This is an ongoing experiment to create a general-use chess board representation API.
+An old project I brought back to life!
+
+It was an experiment to create a general-use chessboard representation API. I kept the useful parts.
 
 ![alt text](https://github.com/healeycodes/show-chessboard-with-express/blob/master/public/img/example-board.png "Chessboard")
 
 
-Currently it's an example of a Node.js/Express/EJS wrapper around chessboard.js.
+It's an example of a Node.js/Express/EJS wrapper around chessboard.js.
 
 There are two routes, both of which accept a FEN string and return a page containing a chessboard.js representation of the FEN string in HTML/CSS/JavaScript. GET uses params, POST uses JSON.
 
