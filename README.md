@@ -1,4 +1,6 @@
-## Chessboard Representation API [![Build Status](https://travis-ci.org/healeycodes/chessboard-representation-api.svg?branch=master)](https://travis-ci.org/healeycodes/chessboard-representation-api)
+[![Build Status](https://travis-ci.org/healeycodes/chessboard-representation-api.svg?branch=master)](https://travis-ci.org/healeycodes/chessboard-representation-api)
+
+## Chessboard Representation API
 
 An old project I brought back to life!
 
